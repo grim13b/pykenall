@@ -5,7 +5,8 @@ WORKDIR /usr/app
 
 RUN pip install pipenv
 
-COPY Pipfile Pipfile.lock ./
+COPY Pipfile ./
+COPY Pipfile.lock ./
 COPY src ./src
 COPY assets ./assets
 

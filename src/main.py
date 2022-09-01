@@ -17,13 +17,7 @@ def health_check():
     return "OK"
 
 
-@app.get("/postalcode/{postal_code}")
+@app.get("/address/{postal_code}")
 def find_by_postalcode(postal_code: str):
     query = Query()
     return db.search(query.postalcode.matches(f'^{postal_code}'))
-
-
-@app.get("/jiscode/{jis_code}")
-def find_by_jiscode(jis_code: str):
-    query = Query()
-    return db.search(query.jisx0401x0402.matches(f'^{jis_code}'))
