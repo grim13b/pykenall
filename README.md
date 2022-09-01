@@ -1,5 +1,9 @@
 # pykenall
 
+KenALL.CSV を JSON にして FastAPI でサーバーっぽく動かす例。
+
+https://gist.github.com/grim13b/edd7c3be0d7350e926fb のブラッシュアップ版。
+
 ## 使い方
 
 1. ./data に KEN_ALL.CSV を置く
